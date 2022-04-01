@@ -14,25 +14,28 @@ body {
   align-items: center;
 }
 
-h2, p {
+h1, p {
   font-family: 'Outfit', sans-serif;
   text-align: center;
-  margin: 8% 0;
 }
 
-h2 {
+h1 {
   color: hsl(218, 44%, 22%);
+  font-size: 1.5rem;
+  padding: 5.9243%;
+  margin: 0;
 }
 
 p {
   line-height: 1.5;
   color: hsl(220, 15%, 55%);
+  margin: 0 0 5.9243% 0;
 }
 
 
 /* === Container Styles === */
 
-#jumbo_container {
+main {
   width: 22.222%;
   height: auto;
   background-color: hsl(0, 0%, 100%);
@@ -44,20 +47,20 @@ p {
   margin-top: 7%;
 }
 
-#qr_code_container {
+.qr_code_container {
   width: 90%;
   height: 90%;
   border-radius: 20px;
   padding: 5% 10%;
 }
 
-#qr_code_container img {
+.qr_code_container img {
   width: 100%;
   height: auto;
   border-radius: 20px;
 }
 
-#text-container {
+.text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +72,7 @@ p {
 
 @media only screen and (max-width: 480px) {
 
-  #jumbo_container {
+  main {
     width: 85.333%;
     margin-top: 7%;
   }
